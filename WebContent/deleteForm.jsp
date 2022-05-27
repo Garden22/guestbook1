@@ -7,19 +7,18 @@
 	int no = Integer.parseInt(request.getParameter("no"));
 	
 	GuestBookDao gbDao = new GuestBookDao();
-		
 %>	
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>삭제폼</title>
 </head>
 <body>
 	<form action="./delete.jsp" method="post">
-		<input type="hidden" name="no" value=<%=no %>>
+		<input type="hidden" name="no" value=<%=no%>>
 		<label for="pw">비밀번호</label>
-		<input id="pw" type="password" name="pw" value="">
+		<input id="pw" type="text" name="pw" value="">
 		<button type="submit">확인</button>
 	</form>
 	<a href="./addList.jsp">메인으로 돌아가기</a>

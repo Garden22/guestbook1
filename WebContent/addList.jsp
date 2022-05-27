@@ -16,10 +16,10 @@
 <body>
 	<form action="./add.jsp" method="post"><table border="1">
 		<tr>
-			<td>이름</td>
-			<td><input type="text" name="name" value=""></td>
-			<td>비밀번호</td>
-			<td><input type="text" name="password" value=""></td>
+			<td><label for="name">이름</label></td>
+			<td><input id="name" type="text" name="name" value=""></td>
+			<td><label for="pw">비밀번호</label></td>
+			<td><input id="pw" type="text" name="password" value=""></td>
 		</tr>
 		<tr>
 			<td colspan="4"><textarea name="content"></textarea></td>

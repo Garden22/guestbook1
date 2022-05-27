@@ -8,12 +8,14 @@
 	String pw = request.getParameter("pw");
 	
 	GuestBookDao gbDao = new GuestBookDao();
+	
 	if (pw.equals(gbDao.findPW(no))) {
 		gbDao.delete(no);
 	} 
 	
 	response.sendRedirect("./addList.jsp");
 %>
+
 <!DOCTYPE html>
 <html>
 <head>
